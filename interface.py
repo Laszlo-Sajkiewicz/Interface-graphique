@@ -1,4 +1,6 @@
+import sys
 from PyQt4 import QtCore, QtGui
+
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -31,7 +33,7 @@ class Ui_Form(object):
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
-        Form.setWindowTitle(QtGui.QApplication.translate("Form", "PyQt : dessin : enregistrer fichier", None, QtGui.QApplication.UnicodeUTF8))
+        Form.setWindowTitle(QtGui.QApplication.translate("Form", "Tomography Treatment", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonNouveauImage.setText(QtGui.QApplication.translate("Form", "Nouveau", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonEnregistrerImage.setText(QtGui.QApplication.translate("Form", "Enregistrer", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonOuvrirImage.setText(QtGui.QApplication.translate("Form", "Ouvrir", None, QtGui.QApplication.UnicodeUTF8))
