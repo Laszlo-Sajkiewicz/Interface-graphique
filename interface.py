@@ -16,9 +16,6 @@ class Ui_Form(object):
         self.labelImage.setStyleSheet(_fromUtf8("background-color: rgb(180, 180, 180);"))
         self.labelImage.setText(_fromUtf8(""))
         self.labelImage.setObjectName(_fromUtf8("labelImage"))
-        self.pushButtonNouveauImage = QtGui.QPushButton(Form)
-        self.pushButtonNouveauImage.setGeometry(QtCore.QRect(5, 290, 86, 27))
-        self.pushButtonNouveauImage.setObjectName(_fromUtf8("pushButtonNouveauImage"))
         self.pushButtonEnregistrerImage = QtGui.QPushButton(Form)
         self.pushButtonEnregistrerImage.setGeometry(QtCore.QRect(185, 290, 86, 27))
         self.pushButtonEnregistrerImage.setObjectName(_fromUtf8("pushButtonEnregistrerImage"))
@@ -34,9 +31,8 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QtGui.QApplication.translate("Form", "Tomography Treatment", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButtonNouveauImage.setText(QtGui.QApplication.translate("Form", "Nouveau", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButtonEnregistrerImage.setText(QtGui.QApplication.translate("Form", "Enregistrer", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButtonOuvrirImage.setText(QtGui.QApplication.translate("Form", "Ouvrir", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonEnregistrerImage.setText(QtGui.QApplication.translate("Form", "Save", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButtonOuvrirImage.setText(QtGui.QApplication.translate("Form", "Open", None, QtGui.QApplication.UnicodeUTF8))
 
 
 if __name__ == "__main__":
