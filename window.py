@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QMainWindow, QPushButton, QApplication, QAction , qA
 import skimage
 from skimage import io , data
 import os
+from PIL.Image import *
 
 
 class Window(QMainWindow):
@@ -25,6 +26,7 @@ class Window(QMainWindow):
         menu = self.menuBar()
         FileMenu=menu.addMenu('&File')
         FileMenu.addAction(exitAction)
+        
         # end menu bar
         
         # button and position
@@ -54,11 +56,10 @@ class Window(QMainWindow):
     def buttonClicked(self): # method button
 
         sender = self.sender()
-        # display 
-        im = io.imread('sauver.jpg')
-        print im.shape
-        io.imshow(im)
-        
+        #display
+ 
+        im = open("sauver.jpg")
+        Image.show(im)
         self.statusBar().showMessage(sender.text() + ' was pressed')
         
         # add function load image
